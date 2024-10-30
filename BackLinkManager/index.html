@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BackLink</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1 id="show-modal">Click to Add Backlink</h1>
+
+    <div class="container" id="backlinks-container"></div>
+
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <div class="modal-header">
+          <h3>Add Backlink</h3>
+          <i class="fas fa-times close-icon" id="close-modal"></i>
+        </div>
+
+        <div class="modal-content">
+          <form id="backlink-form">
+            <div class="form-group">
+              <label class="form-label">Website Name</label>
+              <input class="form-input" type="text" id="website-name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Website Url</label>
+              <input class="form-input" type="text" id="website-url" />
+            </div>
+            <button type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
